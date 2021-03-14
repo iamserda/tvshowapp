@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: darkgoldenrod;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid red;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+    min-width: 450px;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 0.5em solid rgba(225, 225, 225, 0.95);
+    border-top: none;
+    border-bottom: none;
+    padding: 1em;
+}
+
+.app-title {
+    width: 100%;
+    margin: 0 auto;
+    padding: 1em 0;
+    text-align: center;
+    font-family: Futura, "San-Francisco", "Helvetica Neue", Helvetica, sans-serif;
+    background: rgba(225, 225, 225, 0.95);
+    color: darkgoldenrod;
+    font-size: 2.5rem;
+    border: 4px solid rgba(225, 225, 225, 0.5);
+}
+
+.app {
+    border: 10px solid rgba(225, 225, 225, 0.95);
+    width: 75%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    background: whitesmoke;
+    /* grid style */
+    display: grid;
+    grid-template-rows: 1fr 4fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.5em;
+    grid-template-areas:
+        "header""summary"
+        "seasons""seasons";
+}
+
+.seasons {
+    grid-area: seasons;
+    border: 4px solid white;
+    padding: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.showHeader {
+    grid-area: header;
+    padding: 1em;
+    background: white;
+}
+
+.show-title {
+    grid-row: 2;
+    grid-column: 1;
+}
+
+.summary {
+    grid-area: summary;
+    grid-row: 2;
+}
+
+/* Style to present individual seasons */
+.season {
+    width: 100%;
+    height: 100%;
+    max-height: 250px;
+    max-width: 300px;
+    background: white;
+    padding: 1em;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+        "image season-title"
+        "image season-number";
+    align-items: start;
+    justify-content: center;
+    grid-gap: 1em;
+}
+
+.season-cover {
+    grid-area: image;
+    width: 100%;
+    max-width: 100px;
+    height: 100%;
+    max-height: 141px;
+    grid-row: 1 / 3;
+    grid-column: 1 / 2;
+    object-fit: cover;
+}
+
+.season-title {
+    grid-area: season-title;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    color: blue;
+    background: white;
+    font-weight: 700;
+}
+
+.season-number {
+    grid-area: season-number;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+footer {
+    margin: 0;
+    background: white;
+    padding: 1em;
+    color: goldenrod;
+    font-size: 0.85rem;
+    text-align: center;
+    width: 100%;
+    font-weight: bold;
+}
