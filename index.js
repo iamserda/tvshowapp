@@ -22,6 +22,7 @@ const findShow = async (query) => {
     try {
         if (response.ok) {
             const data = await response.json();
+            console.log(data);
             return data;
         } else {
             throw new Error(`Error: findShow(url) ${ response.status }`);
@@ -41,6 +42,9 @@ const createApp = () => {
 
 /*allowing the user to request a new show from the api.*/
 const displaySearchBar = () => {
+    // I know, it does not do anything,
+    // TODO: rearrange code to make use of this function
+    // TODO: to add the item to the DOM.
     const searchDiv = `
         <div id="searchBar" class="search">
             <input type="text" id="search-term" name="search-bar" placeholder="Enter Show Name" />
