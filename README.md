@@ -9,7 +9,7 @@ Thank you to the engineers and staff at tvMaze, it was a pleasure working with y
 
 ## Where is the Link
 
-<a href="https://iamserda.github.io/tvshowapp/" target="_blank">tvSHOWS.app</a>
+<a href="https://iamserda.github.io/tvshowsapp/" target="_blank">tvSHOWS.app</a>
 
 Questions, concerns, emotional outbursts? Reach out!
 
