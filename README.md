@@ -1,34 +1,19 @@
-# title(){
-		
-		return this.options.title || this.options.name;
-	}
+# TV SHOWS based on TVMazeAPI
 
-Quick start:
+## What is it?
 
-```
-$ yarn # npm install
-$ yarn build # npm run build
-````
+An interface allowing a user to search for a show, and if available(from the tvMAZE API), the show title, cover, summary and seasons will be displayed in a flexible grid interface.
+This is not a full implementation of everything available form the API. My intention isn't to reproduce their application.
 
-## Development
+Thank you to the engineers and staff at tvMaze, it was a pleasure working with your API.
 
-Run Webpack in watch-mode to continually compile the JavaScript as you work:
+## Where is the Link
 
-```
-$ yarn watch # npm run watch
-```
+<a href="https://iamserda.github.io/tvshowapp/" target="_blank">tvSHOWS.app</a>
 
-## Supporting Scrimba
+Questions, concerns, emotional outbursts? Reach out!
 
-Since 2017, we have created over 20 free courses on Scrimba, and we're going to
-continue launching free courses. But to pay our bills, we have to charge once
-in a while. So if you've ever wanted to "give back" to Scrimba, you can do that by buying
-	one of our paid courses
+- Twitter: <a href="https://twitter.com/iamserda">@iamserda</a>
+- LinkedIn: <a href="https://linkedin.com/in/iamserda" target="_blank">iamserda</a>
 
-- [Become a professional React developer](https://scrimba.com/course/greact)
-- [The Responsive Web Design Bootcamp](https://scrimba.com/course/gresponsive)
-- [The Ultimate JavaScript Bootcamp](https://scrimba.com/course/gjavascript)
-
-	It would also mean the world to us if you share the courses.  
-
-Happy Coding!
+Made with ❤️ in Inwood, NYC. Circa March 2021.
