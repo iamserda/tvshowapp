@@ -150,7 +150,7 @@ h1 {
 .season-title {
     grid-area: title;
     align-self: flex-end;
-    justify-self: center;
+    justify-self: flex-start;
     margin-bottom: 0;
 }
 
