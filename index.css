@@ -10,17 +10,16 @@ html,
 body {
     margin: 0;
     padding: 0;
-
     font-size: 16px;
-    min-width: 600px;
 }
 
 body {
+    min-width: 600px;
     color: #515151;
     font-family: Helvetica, Arial, sans-serif;
+    background: #c7f0db;
     display: flex;
     flex-flow: column nowrap;
-    background: #c7f0db;
 }
 
 h1 {
@@ -32,14 +31,14 @@ h1 {
 }
 
 .app {
-    background: #6c7b95;
+    background: #6c7b9577;
     color: white;
     border: 0.25em solid #464159;
     margin: auto auto 2em;
     padding: 1em;
     display: grid;
     width: 90%;
-
+    /* min-height: 100%; */
     max-width: 930px;
     grid-template: auto auto 1fr / 1fr 1fr 1fr 1fr;
     grid-template-areas:
@@ -113,6 +112,7 @@ h1 {
     font-size: 12px;
     font-weight: bold;
     margin: auto auto 25px;
+    margin-top: auto;
     text-align: center;
     background-color: #464159;
     color: white;

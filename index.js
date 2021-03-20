@@ -22,7 +22,7 @@ const findShow = async (query) => {
     try {
         if (response.ok) {
             const data = await response.json();
-            console.log(data);
+            // console.log(data);
             return data;
         } else {
             throw new Error(`Error: findShow(url) ${ response.status }`);
@@ -124,8 +124,8 @@ const displaySeasons = async (data) => {
         body.prepend(h1); // positions h1 as 1st element.
         h1.insertAdjacentHTML('afterend', searchDiv);
 
-        // const ss = await displayShow();
-        // displaySeasons(ss);
+        const ss = await displayShow();
+        displaySeasons(ss);
 
         const submitButton = document.getElementById('submit');
         submitButton.onclick = async () => {
